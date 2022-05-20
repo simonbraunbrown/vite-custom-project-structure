@@ -1,0 +1,13 @@
+{
+  "index.html": {
+    "file": "assets/js/index-51a91acd.js",
+    "src": "index.html",
+    "isEntry": true,
+    "css": [
+      "assets/css/index-292f9821.css"
+    ],
+    "assets": [
+      "assets/img/favicon-17e50649.svg"
+    ]
+  }
+}
