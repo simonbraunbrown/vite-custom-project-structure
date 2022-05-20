@@ -20,6 +20,7 @@ export default defineConfig({
 		outDir: path.resolve(__dirname, './../dist/'),
         emptyOutDir: true,
         manifest: true,
+        ssrManifest: true,
         minify: 'esbuild',
 
 		rollupOptions: {

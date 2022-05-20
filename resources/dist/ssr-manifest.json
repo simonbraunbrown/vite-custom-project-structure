@@ -1,0 +1,17 @@
+{
+  "../vite/modulepreload-polyfill": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "src/styles/style.scss": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "src/images/favicon.svg": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "src/js/main.js": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "index.html": [
+    "assets/img/favicon-17e50649.svg"
+  ]
+}
