@@ -5,6 +5,39 @@
   "src/styles/style.scss": [
     "assets/img/favicon-17e50649.svg"
   ],
+  "../node_modules/@lit/reactive-element/css-tag.js": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "../node_modules/@lit/reactive-element/reactive-element.js": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "../node_modules/lit-html/lit-html.js": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "../node_modules/lit-element/lit-element.js": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "../node_modules/lit-html/directive.js": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "../node_modules/lit-html/directives/unsafe-html.js": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "../node_modules/lit-html/directives/unsafe-svg.js": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "../~icons/mdi/battery": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "../~icons/bi/arrow-up": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "../~icons/my-custom-icons/iconify": [
+    "assets/img/favicon-17e50649.svg"
+  ],
+  "src/js/icons.js": [
+    "assets/img/favicon-17e50649.svg"
+  ],
   "src/images/favicon.svg": [
     "assets/img/favicon-17e50649.svg"
   ],

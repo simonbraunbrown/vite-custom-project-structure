@@ -1,4 +1,6 @@
 import { defineConfig } from 'vite';
+import Icons from 'unplugin-icons/vite';
+import { FileSystemIconLoader } from 'unplugin-icons/loaders';
 import path from 'path';
 
 export default defineConfig({
@@ -9,19 +11,19 @@ export default defineConfig({
 		preserveSymlinks: true,
 	},
 
-    cacheDir: path.resolve(__dirname, 'node_modules/.vite'),
-    publicDir: path.resolve(__dirname, './../public/'),
+	cacheDir: path.resolve(__dirname, 'node_modules/.vite'),
+	publicDir: path.resolve(__dirname, './../public/'),
 
-    css: {
-        devSourcemap: true,
-    },
+	css: {
+		devSourcemap: true,
+	},
 
 	build: {
 		outDir: path.resolve(__dirname, './../dist/'),
-        emptyOutDir: true,
-        manifest: true,
-        ssrManifest: true,
-        minify: 'esbuild',
+		emptyOutDir: true,
+		manifest: true,
+		ssrManifest: true,
+		minify: 'esbuild',
 
 		rollupOptions: {
 			output: {
@@ -37,4 +39,14 @@ export default defineConfig({
 			},
 		},
 	},
+
+	plugins: [
+		Icons({
+			scale: 1.0,
+			compiler: 'raw',
+			customCollections: {
+				'my-custom-icons': FileSystemIconLoader('./templating/src/icons')
+			},
+		}),
+	],
 });
