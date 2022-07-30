@@ -1,6 +1,6 @@
-import './../styles/style.css';
+import '../styles/style.css';
 import './icons';
-import imgUrl from './../images/favicon.svg';
+import imgUrl from '../images/favicon.svg';
 
 document.querySelector('#app').innerHTML = `
   <h1 class="mb-10 text-6xl">Hello Vite!</h1>

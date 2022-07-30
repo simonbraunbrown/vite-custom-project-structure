@@ -11,7 +11,7 @@ const icons = {
 	iconify,
 };
 
-export class Icon extends LitElement {
+export default class Icon extends LitElement {
 	static properties = {
 		iconName: {},
 	};
