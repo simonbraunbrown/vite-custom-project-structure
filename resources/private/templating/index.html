@@ -8,8 +8,16 @@
   </head>
   <body>
     <main>
+      <div class="mx-8 flex items-center justify-end gap-8">
+        <div class="form-control">
+          <label class="label cursor-pointer">
+            <span class="label-text mr-4">Theme</span> 
+            <input type="checkbox" class="toggle theme-toggle" checked />
+          </label>
+        </div>
+      </div>
       <div id="app" class="mb-20 mt-20"></div>
-      <div class="container max-w-none py-20 px-10 bg-gray-200 bg-opacity-50">
+      <div class="container max-w-none py-20 px-10 bg-base-200 bg-opacity-50">
         <div class="containe max-w-xl mx-auto">
             <a href="https://iconify.design/" class="link">
               <h2>iconify icons</h2>
@@ -23,6 +31,38 @@
               <span class="text-2xl"><my-icon iconName="iconify" class="icon-inline-left"></my-icon>icon left</span>
               <span class="text-4xl">icon right<my-icon iconName="iconify" class="icon-inline-right"></my-icon></span>
             </div>
+        </div>
+      </div>
+      <div class="container mx-auto my-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-10">
+        <div class="card w-96 bg-base-200 shadow-xl">
+          <figure class="flex items-center justify-center aspect-[1/1]"><img class="max-h-[50%] max-w-[80%]" src="/src/images/favicon.svg" alt="vite!"></figure>
+          <div class="card-body">
+            <h2 class="card-title">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <a href="https://vitejs.dev/" class="btn btn-primary" target="_blank">Learn now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-200 shadow-xl">
+          <figure class="flex items-center justify-center aspect-[1/1]"><img class="max-h-[50%] max-w-[80%]"  src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/master/.github/logo-dark.svg" alt="tailwind!"></figure>
+          <div class="card-body">
+            <h2 class="card-title">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <a href="https://tailwindcss.com/docs/installation" class="btn btn-primary" target="_blank">Learn now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-200 shadow-xl">
+          <figure class="flex items-center justify-center aspect-[1/1]"><img class="max-h-[50%] max-w-[80%]" src="https://raw.githubusercontent.com/saadeghi/files/main/daisyui/logo-4.svg" alt="daisyui!"></figure>
+          <div class="card-body">
+            <h2 class="card-title">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <a href="https://daisyui.com/docs/install/" class="btn btn-primary" target="_blank">Learn now!</a>
+            </div>
+          </div>
         </div>
       </div>
     </main>
