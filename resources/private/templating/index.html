@@ -8,16 +8,72 @@
 	</head>
 
 	<body>
-		<main>
-			<div class="mx-8 flex items-center justify-end gap-8">
-				<div class="form-control">
-					<label class="label cursor-pointer">
-						<span class="label-text mr-4">Theme</span>
-						<input type="checkbox" class="toggle theme-toggle" checked />
-					</label>
+		<header>
+			<div class="navbar bg-base-100">
+				<div class="navbar-start">
+					<div class="dropdown">
+						<label tabindex="0" class="btn btn-ghost lg:hidden">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-5 w-5"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h8m-8 6h16" />
+							</svg>
+						</label>
+						<ul
+							tabindex="0"
+							class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+							<li><a>Item 1</a></li>
+							<li tabindex="0">
+								<a class="justify-between">
+									Parent
+									<span class="icon icon-bi-chevron-right"></span>
+								</a>
+								<ul class="p-2">
+									<li><a>Submenu 1</a></li>
+									<li><a>Submenu 2</a></li>
+								</ul>
+							</li>
+							<li><a>Item 3</a></li>
+						</ul>
+					</div>
+					<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+				</div>
+				<div class="navbar-center hidden lg:flex">
+					<ul class="menu menu-horizontal p-0">
+						<li><a>Item 1</a></li>
+						<li tabindex="0">
+							<a>
+								Parent
+								<span class="icon icon-bi-chevron-down"></span>
+							</a>
+							<ul class="p-2">
+								<li><a>Submenu 1</a></li>
+								<li><a>Submenu 2</a></li>
+							</ul>
+						</li>
+						<li><a>Item 3</a></li>
+					</ul>
+				</div>
+				<div class="navbar-end flex-wrap">
+					<div class="form-control">
+						<label class="label cursor-pointer px-4">
+							<span class="label-text mr-4">Theme</span>
+							<input type="checkbox" class="toggle theme-toggle" checked />
+						</label>
+					</div>
+					<a class="btn">Get started</a>
 				</div>
 			</div>
-			<div id="app" class="mb-20 mt-20"></div>
+		</header>
+		<main>
+			<div id="app" class="mb-20 mt-40"></div>
 			<div class="container max-w-none py-20 px-10 bg-base-200 bg-opacity-50">
 				<div class="containe max-w-xl mx-auto">
 					<a href="https://iconify.design/" class="link">

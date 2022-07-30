@@ -11,8 +11,8 @@ document.querySelector('#app').innerHTML = `
 const themeToggle = document.querySelector('.theme-toggle');
 themeToggle.addEventListener('change', () => {
 	if (themeToggle.checked) {
-		document.querySelector('html').setAttribute('data-theme', 'dark');
+		document.querySelector('html').setAttribute('data-theme', 'candystoredark');
 	} else {
-		document.querySelector('html').setAttribute('data-theme', 'light');
+		document.querySelector('html').setAttribute('data-theme', 'candystore');
 	}
 });

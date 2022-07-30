@@ -4,7 +4,7 @@
 
 .icon {
 	@apply relative inline-block;
-	color: #747bff;
+	color: inherit;
 	font-size: inherit;
 	line-height: inherit;
 	top: 0.125em;
@@ -22,7 +22,7 @@ a.link {
 	display: inline-block;
 	@apply text-xl;
 	text-decoration: none;
-	background-image: linear-gradient(180deg, transparent 94%, #747bff 0);
+	background-image: linear-gradient(180deg, transparent 94%, hsl(var(--p)) 0);
 	background-size: 0px 93%;
 	background-repeat: no-repeat;
 	transition: all 400ms ease 0s;
