@@ -45,7 +45,7 @@ export default defineConfig({
 			scale: 1.0,
 			compiler: 'raw',
 			customCollections: {
-				'my-custom-icons': FileSystemIconLoader('./templating/src/icons')
+				'my-custom-icons': FileSystemIconLoader('./templating/src/icons'),
 			},
 		}),
 	],
