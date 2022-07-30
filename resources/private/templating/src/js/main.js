@@ -1,5 +1,5 @@
+import 'uno.css';
 import '../styles/style.css';
-import './icons';
 import imgUrl from '../images/favicon.svg';
 
 document.querySelector('#app').innerHTML = `

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
-import Icons from 'unplugin-icons/vite';
-import { FileSystemIconLoader } from 'unplugin-icons/loaders';
+import Unocss from 'unocss/vite';
+import { presetIcons } from 'unocss';
+import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders';
 import path from 'path';
 
 export default defineConfig({
@@ -41,12 +42,17 @@ export default defineConfig({
 	},
 
 	plugins: [
-		Icons({
-			scale: 1.0,
-			compiler: 'raw',
-			customCollections: {
-				'my-custom-icons': FileSystemIconLoader('./templating/src/icons'),
-			},
+		Unocss({
+			presets: [
+				presetIcons({
+					prefix: 'icon-',
+					collections: {
+						custom: FileSystemIconLoader('./templating/src/icons/', (svg) =>
+							svg.replace(/#fff/, 'currentColor')
+						),
+					},
+				}),
+			],
 		}),
 	],
 });
